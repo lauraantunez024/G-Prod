@@ -4,13 +4,13 @@
 
         <TransitionSlide title="About Me"/>
         <AboutMe />
-        <TransitionSlide title="Services List"/>
+        <!-- <TransitionSlide title="Services List"/>
         <ServicesList v-for="service in services" :key="service.id" :title="service.title"
         :firstBullet="service.descriptionTiles[0].text" :secondBullet="service.descriptionTiles[1].text"
         :thirdBullet="service.descriptionTiles[2].text" :firstDetails="service.descriptionTiles[0].details"
         :secondDetails="service.descriptionTiles[1].details" :thirdDetails="service.descriptionTiles[2].details" />
         <TransitionSlide title="Testimonials!"/>
-        <MyTestimonials />
+        <MyTestimonials /> -->
       </div>
      
 

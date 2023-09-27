@@ -1,7 +1,7 @@
 <template>
   <!-- <div> -->
   <v-app dark>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
@@ -24,46 +24,32 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-app-bar
       :clipped-left="clipped"
       
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
    
-      <v-toolbar-title>{{ title }}</v-toolbar-title>
+      <v-btn to="/" link>{{ title }}</v-btn>
       <v-spacer />
-      <!-- <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn> -->
+      <v-spacer />
+      <v-spacer />
+      <v-spacer />
+      <v-spacer />
+      <v-spacer />
+      <v-spacer />
+      <v-btn>About</v-btn>
+      <v-btn :to="'/directory'" link>Portfolio</v-btn>
+      <v-btn :to="'/videos'" link>Resume</v-btn>
+  
     </v-app-bar>
-    <!-- <v-main> -->
+ 
         <Nuxt />
-    <!-- </v-main> -->
-    <!-- <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> -->
-    <slot/>
+      <slot/>
   </v-app>
-<!-- </div> -->
+
 </template>
 
 <script>
