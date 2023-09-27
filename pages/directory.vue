@@ -1,13 +1,18 @@
 <template>
-    <div>
-        <h1> im the directory!!!!!!!!! </h1>
+    <div class="container">
+        <!-- <h1> im the directory!!!!!!!!! </h1> -->
+        <DirectoryItems/>
     </div>
 </template>
 
 <script>
+
+import DirectoryItems from '../components/DirectoryItems.vue'
+
     export default {
-        name: 'DirectoryView'
-        
+        name: 'DirectoryView',
+        components: 
+        DirectoryItems
     }
 </script>
 
@@ -15,6 +20,10 @@
 h1 {
     color: black;
     font-size: 3rem;
+    top: 50%;
+    position: absolute;
 }
+
+
 
 </style>

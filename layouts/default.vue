@@ -1,54 +1,26 @@
 <template>
   <!-- <div> -->
   <v-app dark>
-    <!-- <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          link
-          
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> -->
+   
     <v-app-bar
       :clipped-left="clipped"
       
       app
     >
-      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
    
       <v-btn to="/" link>{{ title }}</v-btn>
       <v-spacer />
-      <v-spacer />
-      <v-spacer />
-      <v-spacer />
-      <v-spacer />
-      <v-spacer />
-      <v-spacer />
-      <v-btn>About</v-btn>
+      <v-btn :to="'/contact'" link>About</v-btn>
       <v-btn :to="'/directory'" link>Portfolio</v-btn>
       <v-btn :to="'/videos'" link>Resume</v-btn>
   
     </v-app-bar>
  
         <Nuxt />
+        <v-spacer/>
       <slot/>
-  </v-app>
+      <v-spacer/>
+    </v-app>
 
 </template>
 
@@ -95,5 +67,6 @@ export default {
   margin-left: 45vw;
   font-size: 2rem;
 }
+
 
 </style>

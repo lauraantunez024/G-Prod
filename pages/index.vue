@@ -2,7 +2,7 @@
 
       <div class="container">
 
-        <TransitionSlide title="About Me"/>
+        <!-- <TransitionSlide title="About Me"/> -->
         <AboutMe />
         <!-- <TransitionSlide title="Services List"/>
         <ServicesList v-for="service in services" :key="service.id" :title="service.title"

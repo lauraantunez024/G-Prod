@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'AboutMe': typeof import("../components/AboutMe.vue")['default']
     'ContactForm': typeof import("../components/ContactForm.vue")['default']
+    'DirectoryItems': typeof import("../components/DirectoryItems.vue")['default']
     'MyTestimonials': typeof import("../components/MyTestimonials.vue")['default']
     'NuxtLogo': typeof import("../components/NuxtLogo.vue")['default']
     'ServicesList': typeof import("../components/ServicesList.vue")['default']
@@ -27,6 +28,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyAboutMe': typeof import("../components/AboutMe.vue")['default']
     'LazyContactForm': typeof import("../components/ContactForm.vue")['default']
+    'LazyDirectoryItems': typeof import("../components/DirectoryItems.vue")['default']
     'LazyMyTestimonials': typeof import("../components/MyTestimonials.vue")['default']
     'LazyNuxtLogo': typeof import("../components/NuxtLogo.vue")['default']
     'LazyServicesList': typeof import("../components/ServicesList.vue")['default']
@@ -54,6 +56,7 @@ declare module 'vue' {
 
 export const AboutMe: typeof import("../components/AboutMe.vue")['default']
 export const ContactForm: typeof import("../components/ContactForm.vue")['default']
+export const DirectoryItems: typeof import("../components/DirectoryItems.vue")['default']
 export const MyTestimonials: typeof import("../components/MyTestimonials.vue")['default']
 export const NuxtLogo: typeof import("../components/NuxtLogo.vue")['default']
 export const ServicesList: typeof import("../components/ServicesList.vue")['default']
@@ -78,6 +81,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyAboutMe: typeof import("../components/AboutMe.vue")['default']
 export const LazyContactForm: typeof import("../components/ContactForm.vue")['default']
+export const LazyDirectoryItems: typeof import("../components/DirectoryItems.vue")['default']
 export const LazyMyTestimonials: typeof import("../components/MyTestimonials.vue")['default']
 export const LazyNuxtLogo: typeof import("../components/NuxtLogo.vue")['default']
 export const LazyServicesList: typeof import("../components/ServicesList.vue")['default']
