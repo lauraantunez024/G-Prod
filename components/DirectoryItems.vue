@@ -38,14 +38,8 @@ export default {
 
                 },
                 {
-                    title: 'Videography',
+                    title: 'Visuals',
                     link: '/videos',
-                    image: 'https://picsum.photos/400/300'
-
-                },
-                {
-                    title: 'Photography',
-                    link: '/photography',
                     image: 'https://picsum.photos/400/300'
 
                 },

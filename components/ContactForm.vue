@@ -1,6 +1,6 @@
 <template>
     <div class="contact-form">
-        <form @submit.prevent="submitForm"> 
+        <v-form @submit.prevent="submitForm"> 
             <div class="text-input" id="name">
                 <label>Name: </label>
                 <input type="text" v-model="name" required>
@@ -32,7 +32,7 @@
             </div>
 
             <button id="submit-btn" type="submit">Submit</button>
-        </form>
+        </v-form>
 
     </div>
 

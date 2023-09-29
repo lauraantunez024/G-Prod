@@ -3,7 +3,7 @@
       <div class="container">
 
         <!-- <TransitionSlide title="About Me"/> -->
-        <AboutMe />
+        <!-- <AboutMe /> -->
         <!-- <TransitionSlide title="Services List"/>
         <ServicesList v-for="service in services" :key="service.id" :title="service.title"
         :firstBullet="service.descriptionTiles[0].text" :secondBullet="service.descriptionTiles[1].text"
@@ -11,6 +11,9 @@
         :secondDetails="service.descriptionTiles[1].details" :thirdDetails="service.descriptionTiles[2].details" />
         <TransitionSlide title="Testimonials!"/>
         <MyTestimonials /> -->
+
+        <h1> money making intro of sorts</h1>
+        <ContactForm/>
       </div>
      
 

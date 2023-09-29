@@ -10,9 +10,9 @@
    
       <v-btn to="/" link>{{ title }}</v-btn>
       <v-spacer />
-      <v-btn :to="'/contact'" link>About</v-btn>
+      <v-btn :to="'/about'" link>About</v-btn>
       <v-btn :to="'/directory'" link>Portfolio</v-btn>
-      <v-btn :to="'/videos'" link>Resume</v-btn>
+      <v-btn :to="'/resume'" link>Resume</v-btn>
   
     </v-app-bar>
  
