@@ -1,6 +1,6 @@
 <template>
-    <div>   
-        <h1> im the sub directory </h1>
+    <div>
+        <h1> soundscape page</h1>
     </div>
 </template>
 
@@ -10,6 +10,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

@@ -37,22 +37,7 @@
 
             </v-slide-group>
             <br>
-            <div class="title-container">
-
-                <h1> Podcasts </h1>
-            </div>
-            <v-slide-group show-arrows>
-                <v-slide-group-item v-for="(podcast, i) in podcasts" :key="i" v-slot="{ isSelected, toggle }">
-                    <v-card class="ma-2" rounded :color="isSelected ? 'primary' : undefined" @click="toggle">
-                        <!-- <v-card-title> {{ video.name }} </v-card-title> -->
-                        <iframe width="100%" height="110%" :src="podcast.path" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </v-card>
-                </v-slide-group-item>
-
-            </v-slide-group>
-            <br>
+           
             <!-- <button class="btn-prev btn" @click="changeVideo('prev')">
                 <v-icon>mdi-chevron-double-right</v-icon>
             

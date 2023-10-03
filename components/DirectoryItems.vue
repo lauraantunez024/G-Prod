@@ -2,15 +2,13 @@
     <v-container class="container">
         <v-spacer/>
         <v-row>
-
-                    <v-col v-for="(item, i) in items" :key="i" flex>
-
+            <br>
+                    <v-col  flex>
                         <v-card>
-                            <v-card-title> {{ item.title }}</v-card-title>
-                            <v-img class="justify-end" :src="item.image" alt="" />
+                            <v-card-title> {{ title }}</v-card-title>
+                            <v-img class="justify-end" :src="image" alt="" />
 
-                                <v-btn :to="item.link">View Projects</v-btn>
-                                <a :href="item.link">ViewP</a>
+                                <v-btn :to="link">View Projects</v-btn>
                         </v-card>
                     </v-col>
         </v-row>
@@ -21,43 +19,28 @@
 <script>
 export default {
     name: 'DirectoryItems',
-    data() {
-        return {
-            items: [
-
-                {
-                    title: 'Social Media',
-                    link: '/social-media',
-                    image: 'https://picsum.photos/400/300'
-                },
-                {
-                    title: 'Audio',
-                    link: '/audio',
-                    image: 'https://picsum.photos/400/300'
-                    
-
-                },
-                {
-                    title: 'Visuals',
-                    link: '/videos',
-                    image: 'https://picsum.photos/400/300'
-
-                },
-             
-            ],
-        }   
-    },
+    props: {
+        title: {
+            required: true,
+            type: String
+        },
+        link: {
+            required: true,
+            type: String
+        },
+        image: {
+            required: true,
+            type: String
+        }
+    }
 }
 </script>
 
 <style scoped>
  .container {
-    display: grid;
     width: 100vw;
-    height: 80vh;
-    /* margin-left: 10vw; */
-    /* border: black 5px solid; */
-    margin: auto;    
+    margin: auto;   
+
  }
 
  h1, img {

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="content">
             <span class="headshot-image" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
-                <img src="../assets/alfred.jpg" alt="Alfred">
+                <img src="../assets/grace.png" alt="Grace">
             </span>
 
             <div class="aboutme-content" data-aos="fade-right" data-aos-duration="2000">
@@ -93,18 +93,19 @@
             </div>
             <div class="contactme-btn">
                 <span id="btn-container" data-aos="fade" data-aos-duration="1500" data-aos-delay="1200">
-                    <router-link id="button" to="/contact">Contact Me</router-link>
+                    <v-btn :to="'/contact'"> Contact Me </v-btn>
                 </span>
 
             </div>
 
-            <h1 id="linkedin" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500"
+
+            <!-- <h1 id="linkedin" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500"
                 data-aos-anchor="#btn-container">
                 <a href="https://www.linkedin.com/in/grace-rolfe-40320223b/" target="_blank"> LinkedIn</a>
             </h1>
             <h1 id="resume" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500" data-aos-anchor="#btn-container">
                 <a href="../../public/resume.pdf" target="_blank"> Resume</a>
-            </h1>
+            </h1> -->
 
 
         </div>
@@ -170,7 +171,7 @@ p {
 
 #btn-container {
 
-    grid-row-start: 3;
+    grid-row-start: 4;
     grid-row-end: 5;
     justify-self: center;
     border-radius: 25%;
@@ -181,7 +182,7 @@ p {
     border-radius: 50%;
     border: 3px black purple;
     padding: 30px;
-    background-color: rgba(61, 0, 61, 0.8);
+    /* background-color: rgba(61, 0, 61, 0.8); */
     position: relative;
     bottom: -9vh;
     width: 3vw;
@@ -227,7 +228,7 @@ a {
 }
 
 img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: flex;
     width: auto;
     height: auto;

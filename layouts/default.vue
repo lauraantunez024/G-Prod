@@ -1,8 +1,8 @@
 <template>
   <!-- <div> -->
-  <v-app dark>
+  <v-app dark >
    
-    <v-app-bar
+    <v-app-bar style="margin-bottom: 100px;"
       :clipped-left="clipped"
       
       app
