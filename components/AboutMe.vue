@@ -230,8 +230,8 @@ a {
 img {
     /* border-radius: 50%; */
     display: flex;
-    width: auto;
-    height: auto;
+    max-width: 100%;
+    
 
 }
 </style>

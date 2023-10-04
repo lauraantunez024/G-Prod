@@ -28,22 +28,7 @@ import DirectoryItems from '~/components/DirectoryItems.vue';
                     image: 'https://picsum.photos/400/300'
                 },
 
-            ],
-            video: [
-                {
-                    title: 'Videography',
-                    link: '/portfolio/videos',
-                    image: 'https://picsum.photos/400/300'
-
-
-                },
-                {
-                    title: 'Photography',
-                    link: '/portfolio/photography',
-                    image: 'https://picsum.photos/400/300'
-                },
-
-            ],
+            ]
             }
         },
         computed: {

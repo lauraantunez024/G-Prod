@@ -19,7 +19,6 @@ export default {
     data() {
         return {
             items: [
-
                 {
                     title: 'Social Media',
                     link: 'portfolio/social-media',
