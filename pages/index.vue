@@ -1,10 +1,61 @@
 <template>
+  <br>
+  <br>
+  <br>
+  <h1 class="mx-auto"> money making intro of sorts</h1>
+  <v-container class="container">
+    <v-sheet>
+      <v-row class="nav-buttons">
+        <v-col>
+          <v-btn icon :to="'/portfolio/photography'"> 
+            <v-icon>mdi-camera-enhance-outline</v-icon>
+          </v-btn>
 
-      <div class="container">
+        </v-col>
+        <v-col>
+          <v-btn icon :to="'/portfolio/audio'"> 
+            <v-icon>mdi-bullhorn-variant</v-icon>
+          </v-btn>
 
-        <!-- <TransitionSlide title="About Me"/> -->
-        <!-- <AboutMe /> -->
-        <!-- <TransitionSlide title="Services List"/>
+        </v-col>
+        <v-col>
+          <v-btn icon :to="'/portfolio/videos'"> 
+            <v-icon>mdi-video-box</v-icon>
+          </v-btn>
+        </v-col>
+        <v-col>
+          <v-btn icon :to="'/portfolio/soundscapes'"> 
+            <v-icon>mdi-speaker-wireless</v-icon>
+          </v-btn>
+
+        </v-col>
+        <v-col>
+          <v-btn icon :to="'/portfolio/social-media'"> 
+            <v-icon>mdi-cellphone-charging</v-icon>
+          </v-btn>
+
+        </v-col>
+      </v-row>
+   
+    </v-sheet>
+
+    <br>
+    <br>
+    <br>
+    <v-divider></v-divider>
+    <v-row>
+      <v-col class="mx-auto" flex>
+
+        <ContactForm />
+
+      </v-col>
+
+
+    </v-row>
+
+    <!-- <TransitionSlide title="About Me"/> -->
+    <!-- <AboutMe /> -->
+    <!-- <TransitionSlide title="Services List"/>
         <ServicesList v-for="service in services" :key="service.id" :title="service.title"
         :firstBullet="service.descriptionTiles[0].text" :secondBullet="service.descriptionTiles[1].text"
         :thirdBullet="service.descriptionTiles[2].text" :firstDetails="service.descriptionTiles[0].details"
@@ -12,18 +63,32 @@
         <TransitionSlide title="Testimonials!"/>
         <MyTestimonials /> -->
 
-        <h1> money making intro of sorts</h1>
-        <ContactForm/>
-      </div>
-     
-
+  </v-container>
 </template>
 
 <style scoped>
 .container {
   width: 100vw;
+
 }
 
+.v-icon {
+  font-size: 4rem;
+  /* left: 30%; */
+
+}
+
+.v-btn {
+  height: 100%;
+  width: 50%;
+  left: 15%;
+  margin-top: 20%;
+  background-color: gainsboro;
+}
+
+#second-row.v-btn {
+  width: 60%;
+}
 </style>
 
 <script>
@@ -46,7 +111,7 @@ export default {
             {
               text: 'Screenwriting',
               details: [
-                'Developed and executed original: ', 
+                'Developed and executed original: ',
                 'Screenplays',
                 'Music video concepts',
                 'Concepts for informational videos and advertisements'
@@ -142,6 +207,6 @@ export default {
     MyTestimonials,
     ServicesList,
     TransitionSlide
-}
+  }
 }
 </script>

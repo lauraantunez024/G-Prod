@@ -1,20 +1,17 @@
 <template>
-    <div class="contact">
+    <v-container class="contact">
       <h1>Want to work together?</h1>
       <v-layout row>
-          <v-flex xs6 class="services">
-              <h2> list of services</h2>
-  
-          </v-flex>
-        <v-flex xs6>
+        <br>
+        <br>
+        <br>
 
             <ContactForm/>
-        </v-flex>
 
 
       </v-layout>
   
-    </div>
+    </v-container>
   </template>
   
   <script>
@@ -33,7 +30,7 @@
   h1 {
     margin-top: 10vh;
     /* margin-bottom: 2vh; */
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
   }
 

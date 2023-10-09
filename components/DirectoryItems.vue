@@ -3,7 +3,7 @@
         <v-spacer/>
         <v-row>
             <br>
-                    <v-col  flex>
+                    <v-col flex>
                         <v-card>
                             <v-card-title> {{ title }}</v-card-title>
                             <v-spacer/> 

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <v-sheet class="container">
         <!-- <h1 id="main-header"> Testimonials!</h1> -->
         <button class="btn-prev btn" @click="changeCard('prev')">Prev</button>
 
@@ -15,7 +15,7 @@
         </div>
         <button class="btn-next btn" @click="changeCard('next')">next</button>
 
-    </div>
+    </v-sheet>
 </template>
 
 <script>
@@ -71,12 +71,10 @@
 <style scoped>
 
 .container {
-    width: 100vw;
-    height: 100vh;
+ 
     display: grid;
     grid-template-columns: 20% 10% 10% 20% 10% 10% 20% ;
     grid-template-rows: 10% 15% 25% 25% 15% 10%;
-    background-color: rgb(238, 234, 234);
 }
 
 
